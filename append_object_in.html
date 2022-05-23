@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> create and append object<!--  --></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .name{
+            height: 40px;
+            margin: 40px;
+            width: 200px;
+            border-radius: 22px;
+            border: 1px solid green;
+        }
+        .link{
+            height: 40px;
+            margin: 40px;
+            width: 200px;
+            border-radius: 22px;
+            border: 1px solid green;
+        }
+
+        .btn{
+            background-color: aqua;
+            border: 1px solid green;
+            border-radius: 22px;
+            height: 35px;
+            width: 150px;
+        }
+    </style>
+
+    <script >
+              const array=[{name:"google", link:"www.google.com"},]
+
+    </script>
+</head>
+<body>
+    
+<div>
+    <input class="name" type="text" placeholder="name" >
+    <input class="link" type="text " placeholder="link">
+    <button class="btn">submit</button>
+</div>
+
+    <script>
+        let btn=document.querySelector(".btn");
+        // let name_of_data=document.querySelector("name").value;
+        // let link_of_data=document.querySelector("link").value;
+        // const arvind={name_of_data,link_of_data};
+       btn.addEventListener("click",function(){
+
+        let name_of_data=document.querySelector(".name").value;
+        let link_of_data=document.querySelector(".link").value;
+       const arvind={ name:name_of_data,link:link_of_data};
+         array.push(arvind);
+        console.table(array);
+       // console.log(arvind+"arvind");
+       
+       })
+
+        
+
+
+    //    const brands = ['nike', 'reebok', 'adidas'];
+    //    const count = brands.push('venum');
+    //    console.log(count);
+    //    console.log(brands);
+      // console.log(array.)
+    </script>
+</body>
+</html>
+
